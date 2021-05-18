@@ -1,0 +1,1 @@
+LEWDS_URL = "https://api.lewds.fun/v1/nsfw/{}"
