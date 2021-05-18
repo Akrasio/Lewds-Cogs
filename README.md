@@ -27,5 +27,5 @@
 | yuri | Show some lesbian hentai from Lewds API. |
 
 # Installation
-`[p]repo add Lewds-Cogs https://github.com/MxsicXYZ/Lewds-Cogs V3`
+`[p]repo add Lewds-Cogs https://github.com/MxsicXYZ/Lewds-Cogs`
 `[p]cog install Lewds-Cogs lewds`
