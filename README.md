@@ -2,7 +2,9 @@
 <p align="center">
         <a href="https://github.com/Cog-Creators/Red-DiscordBot"> <img alt="Red-DiscordBot" 
         src="https://img.shields.io/badge/Red-DiscordBot-red.svg?style=for-the-badge">
+	</a>
 </p>
+
 # Cog list
 | Command | Description | 
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
