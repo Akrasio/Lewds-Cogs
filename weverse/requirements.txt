@@ -1,0 +1,4 @@
+red-discordbot
+discord
+git+git://github.com/MujyKun/Weverse@main#Weverse
+git+git://github.com/MujyKun/IreneUtility@master#V1.03.9
