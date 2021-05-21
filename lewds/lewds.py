@@ -15,7 +15,6 @@ _ = Translator("Nsfw", __file__)
 class Lewds(Core):
     """
     Send NSFW Content from Lewds.Fun
-
     If `[prefix]help Lewds` or any other Nsfw commands are used in a non-nsfw channel,
     you will not be able to see the list of commands for this category.
     """
@@ -98,19 +97,6 @@ class Lewds(Core):
             arg="result",
             source="Lewds API",
             url=sub.LEWDS_URL.format("trap"),
-            )
-    @nsfwcheck()
-    @commands.bot_has_permissions(embed_links=True)
-    @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.command(aliases=["athigh"])
-    async def athighs(self, ctx: commands.Context):
-        """Show some Anime Thigh pics from Lewds API."""
-        await self._send_other_msg(
-            ctx,
-            name=_("Anime Thighs Pictures"),
-            arg="result",
-            source="Lewds API",
-            url=sub.LEWDS_URL.format("athighs"),
             )
     @nsfwcheck()
     @commands.bot_has_permissions(embed_links=True)
