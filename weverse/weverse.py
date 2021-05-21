@@ -4,25 +4,20 @@ from redbot.core import checks, commands
 from redbot.core.i18n import Translator, cog_i18n
 from IreneUtility.util import u_logger as log
 from IreneUtility.Utility import Utility
-
+from .core import Core, nsfwcheck
 import contextlib
 
-from . import constants as sub
-from .core import Core
-
-class Weverse(self, ex):
-        self.ex: Utility = ex
-        self.current_notification_id = 0
-        self.notifications_already_posted = {}  # channel_id : [notification ids]
-        self.available_choices = "[TXT, BTS, GFRIEND, SEVENTEEN, ENHYPEN, NU'EST, CL, P1Harmony, Weeekly, SUNMI," \
+class Weverse(Core):
+  Core.current_notification_id = 0
+  Core.notifications_already_posted = {}  # channel_id : [notification ids]
+  Core.available_choices = "[TXT, BTS, GFRIEND, SEVENTEEN, ENHYPEN, NU'EST, CL, P1Harmony, Weeekly, SUNMI," \
                                  " HENRY, Dreamcatcher, CherryBullet, MIRAE, TREASURE]"
-        """
+  """
         Use `[p]help Weverse` to see the list of commands for this category. ( Uses Weverse.io API )
         """
-        
-        @commands.command()
-        @commands.checks.has_guild_permissions(manage_messages=True)
-        async def updates(self, ctx, community_name, role: discord.Role = None):
+@commands.command()
+@commands.checks.has_guild_permissions(manage_messages=True)
+async def updates(self, ctx, community_name, role: discord.Role = None):
                 """
         Receive Weverse Updates of a specific Weverse community in the current text channel.
         Use again to disable for a specific community.
@@ -31,46 +26,42 @@ class Weverse(self, ex):
         CherryBullet, MIRAE, TREASURE]
         [Format: %updates <community name> [role to notify]]
                 """
-        try:
-          if not self.ex.weverse_client.cache_loaded:
-            return await ctx.send(f"> {ctx.author.display_name}, "
+try:
+  if not Core.ex.weverse_client.cache_loaded:
+    return (await ctx.send(f"> {ctx.author.display_name}, ")+(
                                   f"Weverse cache is being updated. Please try again in a minute or two.")
-          
-          channel_id = ctx.channel.id
-          community_name = community_name.lower()
-          if community_name in ['cherry_bullet', 'cherrybullet']:
-            community_name = "cherry bullet"
-            if await self.ex.u_weverse.check_weverse_channel(channel_id, community_name):
-              if not role:
-                await self.ex.u_weverse.delete_weverse_channel(channel_id, community_name)
-                return await ctx.send(f"> {ctx.author.display_name}, You will no longer receive updates for "
-                                      f"{community_name}.")
-              for community in self.ex.weverse_client.communities:
-                await asyncio.sleep(0)
-                if community.name.lower() == community_name:
-                  # delete any existing before adding a new one.
-                  await self.ex.u_weverse.delete_weverse_channel(channel_id, community_name)
-                  await self.ex.u_weverse.add_weverse_channel(channel_id, community_name)
-                  # add role to weverse subscription after channel is added to db.
-                  if role:
-                    await self.ex.u_weverse.add_weverse_role(channel_id, community_name, role.id)
-                    return await ctx.send(f"> {ctx.author.display_name}, You will now receive weverse updates for"
+  channel_id = ctx.channel.id
+  community_name = community_name.lower()
+  if community_name in ['cherry_bullet', 'cherrybullet']:
+    community_name = "cherry bullet"
+  if await self.ex.u_weverse.check_weverse_channel(channel_id, community_name):
+      if not role: await self.ex.u_weverse.delete_weverse_channel(channel_id, community_name)
+      return await ctx.send(f"> {ctx.author.display_name}, You will no longer receive updates for {community_name}")
+      for community in self.ex.weverse_client.communities:
+        await asyncio.sleep(0)
+  if community.name.lower() == community_name:
+    await self.ex.u_weverse.delete_weverse_channel(channel_id, community_name)
+    await self.ex.u_weverse.add_weverse_channel(channel_id, community_name)
+    if role:
+      await self.ex.u_weverse.add_weverse_role(channel_id, community_name, role.id)
+      return await ctx.send(f"> {ctx.author.display_name}, You will now receive weverse updates for"
                                           f" {community.name} in this channel.")
-                  return await ctx.send(f"> {ctx.author.display_name},I could not find {community_name}. "
+      return await ctx.send(f"> {ctx.author.display_name},I could not find {community_name}. "
                                         f"Available choices are:\n{self.available_choices}")
-        except Exception as e:
-            msg = "An error has occurred trying to subscribe to a weverse community."
-            log.console(f"{msg} - {e}")
-            return await ctx.send(msg)
-        @commands.command()
-        @commands.has_guild_permissions(manage_messages=True)
-        async def disablecomments(self, ctx, community_name):
-            """Disable updates for comments on a community."""
-        channel_id = ctx.channel.id
-        if not await self.ex.u_weverse.check_weverse_channel(channel_id, community_name):
+except Exception as e:
+                    msg = "An error has occurred trying to subscribe to a weverse community."
+                    log.console(f"{msg} - {e}")
+                    return await ctx.send(msg)
+            
+@commands.command()
+@commands.has_guild_permissions(manage_messages=True)
+async def disablecomments(self, ctx, community_name):
+              """Disable updates for comments on a community."""
+              channel_id = ctx.channel.id
+              if not await self.ex.u_weverse.check_weverse_channel(channel_id, community_name):
                 return await ctx.send(f"This channel is not subscribed to weverse updates from {community_name}.")
-        for channel in await self.ex.u_weverse.get_weverse_channels(community_name):
-                await asyncio.sleep(0)
+                for channel in await self.ex.u_weverse.get_weverse_channels(community_name):
+                  await asyncio.sleep(0)
                 if channel[0] != channel_id:
                         continue
                         await self.ex.u_weverse.change_weverse_comment_status(channel_id, community_name, not channel[2],
@@ -78,9 +69,9 @@ class Weverse(self, ex):
                         if channel[2]:
                                 return await ctx.send(f"> This channel will no longer receive comments from {community_name}.")
                         return await ctx.send(f"> This channel will now receive comments from {community_name}.")
-                @tasks.loop(seconds=30, minutes=0, hours=0, reconnect=True)
-                async def weverse_updates(self):
-                        """Process for checking for Weverse updates and sending to discord channels."""
+                        @tasks.loop(seconds=30, minutes=0, hours=0, reconnect=True)
+                        async def weverse_updates(self):
+                          """Process for checking for Weverse updates and sending to discord channels."""
                         if self.ex.weverse_client.cache_loaded:
                                 if await self.ex.weverse_client.check_new_user_notifications():
                                         user_notifications = self.ex.weverse_client.user_notifications
