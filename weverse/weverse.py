@@ -17,10 +17,10 @@ class Weverse(self, ex):
         self.notifications_already_posted = {}  # channel_id : [notification ids]
         self.available_choices = "[TXT, BTS, GFRIEND, SEVENTEEN, ENHYPEN, NU'EST, CL, P1Harmony, Weeekly, SUNMI," \
                                  " HENRY, Dreamcatcher, CherryBullet, MIRAE, TREASURE]"
-    """
-    Use `[p]help Weverse` to see the list of commands for this category. ( Uses Weverse.io API )
-    """
-
+        """
+        Use `[p]help Weverse` to see the list of commands for this category. ( Uses Weverse.io API )
+        """
+        
         @commands.command()
         @commands.has_guild_permissions(manage_messages=True)
         async def updates(self, ctx, community_name, role: discord.Role = None):
