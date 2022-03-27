@@ -29,6 +29,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Ass Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("ass"),
             )
@@ -41,6 +42,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Milk Hentai Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("milk"),
             )
@@ -53,6 +55,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Slime Girl Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("slime"),
             )
@@ -65,6 +68,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Fur-Futa Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("furfuta"),
             )
@@ -77,6 +81,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Fur-Gif Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("furgif"),
             )
@@ -89,6 +94,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Trap/Femboy Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("trap"),
             )
@@ -101,6 +107,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Anime Thighs Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("athighs"),
             )
@@ -113,6 +120,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Boob Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("boobs"),
             )
@@ -126,6 +134,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Feet Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("feet"),
             )
@@ -139,6 +148,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Futa Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("futa"),
             )
@@ -151,6 +161,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("NSFW Gifs"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("gifs"),
             )
@@ -163,6 +174,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Pantsu Pictures"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("pantsu"),
             )
@@ -175,6 +187,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Anime Boobs"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("hboobs"),
             )
@@ -188,6 +201,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Hentai Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("hentai"),
             )
@@ -201,6 +215,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Kink Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("kink"),
             )
@@ -214,6 +229,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Thigh Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("thighs"),
             )
@@ -227,6 +243,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Yuri Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("yuri"),
             )
@@ -240,6 +257,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Latex Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("latex"),
             )
@@ -253,6 +271,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("BDSM Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("bdsm"),
             )
@@ -266,6 +285,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("BBW Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("bbw"),
             )
@@ -279,6 +299,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Blowjob hentai Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("blow"),
             )
@@ -292,6 +313,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Jack-o-Pose Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("jackopose"),
             )
@@ -305,6 +327,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Femboy Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("irlfemb"),
             )
@@ -318,6 +341,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Lewd Feet Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("hfeet"),
             )
@@ -331,6 +355,7 @@ class Lewds(Core):
         await self._send_other_msg(
             ctx,
             name=_("Lewd Neko Image"),
+            arg="",
             source="Ahni API",
             url=sub.LEWDS_URL.format("neko"),
             )
