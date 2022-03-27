@@ -1,1 +1,1 @@
-LEWDS_URL = "https://ahni.dev/nsfw/? {}"
+LEWDS_URL = "https://ahni.dev/nsfw/?{}"
