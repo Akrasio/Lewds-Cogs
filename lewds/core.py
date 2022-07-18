@@ -132,7 +132,7 @@ class Core(commands.Cog):
             em.set_footer(text=footer)
         return em
 
-
+# Based on the NSFW Check as well but modified for the api_key
 def noKey():
     """Error if no API Key is stored"""
     async def predicate(ctx: commands.Context):
@@ -151,6 +151,7 @@ def noKey():
 
     return commands.check(predicate)
 
+# nsfw check and such is from: https://github.com/PredaaA/predacogs 
 def nsfwcheck():
     """
     Custom check that hide all commands used with it in the help formatter
