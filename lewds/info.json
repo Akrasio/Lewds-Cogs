@@ -1,1 +1,1 @@
-{ "author": [ "Xynnix" ], "short": "An NSFW Cog for Red-DiscordBot.", "description": "A handful of lewd things provided by a lewd API", "requirements":["tabulate"]}
+{ "author": [ "Xynnix" ], "short": "An NSFW Cog for Red-DiscordBot.", "description": "A handful of lewd things provided by a lewd API", "requirements":["tabulate"],"install_msg":"Thank you for installing! To set the required API key for the images, please use `[p]set api lewds api_key,YOURAPIKEYHERE`", "end_user_data_statement": "This cog requires a set apikey from an external image api for returning data." }
