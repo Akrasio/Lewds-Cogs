@@ -110,12 +110,7 @@ class Core(commands.Cog):
                 await ctx.send(embed)
         except discord.HTTPException:
             return
-
-    async def _send_msg(self, ctx: commands.Context, name: str, sub: str = None):
-        """Main function called in all Reddit API commands."""
-        embed = await self._make_embed(ctx, sub, name)
-        return await self._maybe_embed(ctx, embed=embed)
-
+            
     async def _send_other_msg(
         self, ctx: commands.Context, name: str, arg: str, source: str, url: str = None
     ):
@@ -137,6 +132,24 @@ class Core(commands.Cog):
             em.set_footer(text=footer)
         return em
 
+
+def noKey():
+    """Error if no API Key is stored"""
+    async def predicate(ctx: commands.Context):
+        ahni_key = await ctx.bot.get_shared_api_tokens("ahni")
+        if ahni_key.get("api_key") is None:
+            msg = _("The Ahni API key has not been set.")
+            try:
+                embed = discord.Embed(title="\N{LOCK} " + msg, color=0xAA0000)
+                await ctx.send(embed=embed)
+            except discord.Forbidden:
+                await ctx.send(msg)
+            finally:
+                return False
+        else:
+            return True
+
+    return commands.check(predicate)
 
 def nsfwcheck():
     """
