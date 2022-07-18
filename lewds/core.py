@@ -136,9 +136,9 @@ class Core(commands.Cog):
 def noKey():
     """Error if no API Key is stored"""
     async def predicate(ctx: commands.Context):
-        ahni_key = await ctx.bot.get_shared_api_tokens("ahni")
-        if ahni_key.get("api_key") is None:
-            msg = _("The Ahni API key has not been set.")
+        lewds_key = await ctx.bot.get_shared_api_tokens("lewds")
+        if lewds_key.get("api_key") is None:
+            msg = _("The Lewds API key has not been set.")
             try:
                 embed = discord.Embed(title="\N{LOCK} " + msg, color=0xAA0000)
                 await ctx.send(embed=embed)
