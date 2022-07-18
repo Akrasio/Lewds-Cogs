@@ -25,8 +25,8 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["butts"])
     async def ass(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some booty gifs from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -41,7 +41,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["milks", "lactation"])
     async def milk(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some milk hentai pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -56,7 +56,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["slimey", "slimes"])
     async def slime(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some Slime Girl pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -71,7 +71,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["furfutanari"])
     async def furfuta(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some furfuta pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -86,7 +86,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["yiffgif"])
     async def furgif(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some furgifs pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -101,7 +101,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["femboys"])
     async def trap(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some trap/femboys pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -116,7 +116,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["athigh"])
     async def athighs(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some Anime Thigh pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -131,7 +131,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["tits"])
     async def boobs(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some boob pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -147,7 +147,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["foot"])
     async def feet(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some feet pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -163,7 +163,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["futanari"])
     async def futa(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some futa pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -178,7 +178,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["lewdgif", "nsfwgif"])
     async def ngifs(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some NSFW Gifs from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -193,7 +193,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["apanties", "undies"])
     async def pantsu(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some Anime underpants pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -208,7 +208,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["animeboobs"])
     async def hboobs(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some random anime boobs from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -224,7 +224,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["hentie"])
     async def hentai(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some hentai pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -240,7 +240,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["kinky"])
     async def kink(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some kink pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -256,7 +256,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["thicc"])
     async def thighs(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some thighs pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -272,7 +272,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["lesbianh"])
     async def yuri(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some yuri pics from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -288,7 +288,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["latexhentai"])
     async def latex(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some latex hentai from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -304,7 +304,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["bondage"])
     async def bdsm(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some BDSM from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -320,7 +320,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=[])
     async def bbw(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some BDSM from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -336,7 +336,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["blowjob"])
     async def blow(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some blowjob from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -352,7 +352,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["jacko"])
     async def jackopose(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some jackopose from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -368,7 +368,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["femboyirl"])
     async def irlfemboy(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some real femboys from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -384,7 +384,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["animefeet"])
     async def hfeet(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some lewd feet from Ahni API."""
         await self._send_other_msg(
             ctx,
@@ -400,7 +400,7 @@ class Lewds(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["nekos"])
     async def neko(self, ctx: commands.Context):
-        apiKey = await ctx.bot.get_shared_api_tokens("ahni")
+        apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some lewd nekos from Ahni API."""
         await self._send_other_msg(
             ctx,
