@@ -14,18 +14,18 @@
 - `[p]set api lewds api_key,YOUROWNAPIKEYHERE`
 
 # Contact 
-- Discord: Ai#0630
-
+- Discord: Shuiro#0630
+- Discord: Akrasio#8178
 # Credits
 - [PredaaA](https://github.com/PredaaA/predacogs "Based of their NSFW Cog")
 
 ## Lewds (commands list)
 | Command | Description | 
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ass | Show some booty pics from Lewds API. |
+| asspic / assgif | Show some booty pics from Lewds API. |
 | boobs | Show some boobie pics from Lewds API. |
 | athighs | Show some anime thighs from Lewds API. |
-| feet | Show some feet pics from Lewds API. |
+| feetpic | Show some feet pics from Lewds API. |
 | furfuta | Show some furry futanari pics from Lewds API. |
 | furgif | Show some furry gifs from Lewds API. |
 | futa | Show some futa images from Lewds API. |
