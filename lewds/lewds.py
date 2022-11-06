@@ -23,8 +23,8 @@ class Lewds(Core):
     @nsfwcheck()
     @commands.bot_has_permissions(embed_links=True)
     @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.command(aliases=["butts"])
-    async def ass(self, ctx: commands.Context):
+    @commands.command(aliases=["butt"])
+    async def asspic(self, ctx: commands.Context):
         apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         apiKey = await ctx.bot.get_shared_api_tokens("lewds")
         """Show some booty gifs from Ahni API."""
