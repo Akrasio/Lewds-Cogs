@@ -1,1 +1,1 @@
-LEWDS_URL = "https://ahni.dev/v2/nsfw/img?end={}&apikey={}"
+LEWDS_URL = "https://kyra.tk/v2/nsfw/img?end={}&apikey={}"
